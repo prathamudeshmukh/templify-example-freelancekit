@@ -56,6 +56,35 @@ export default function Home() {
         </a>{' '}
         · PDF generation API for developers
       </footer>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebApplication',
+            name: 'FreelanceKit',
+            url: 'https://examples.templify.cloud',
+            description:
+              'Generate professional proposals, contracts, invoices, and receipts for free — powered by Templify.',
+            applicationCategory: 'BusinessApplication',
+            operatingSystem: 'Web',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            author: {
+              '@type': 'Organization',
+              name: 'Templify',
+              url: 'https://templify.cloud',
+            },
+            isPartOf: {
+              '@type': 'SoftwareApplication',
+              name: 'Templify',
+              url: 'https://templify.cloud',
+              description:
+                'API-first PDF generation platform. No-code templates, Handlebars support, and enterprise-scale performance.',
+            },
+          }),
+        }}
+      />
     </div>
   )
 }
